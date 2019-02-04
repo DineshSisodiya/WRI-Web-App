@@ -1,0 +1,323 @@
+/* 
+@author : Dinesh Sisodiya
+@Github : https://github.com/DineshSisodiya
+*/
+
+
+html,body {
+  height: 100%;
+}
+
+p {
+  padding: 10px;
+  font-size: 13px;
+  color: #444;
+}
+
+body{
+  background: #f8f8f8;
+  width: 100%;
+  font-family: segoe ui;
+}
+body.login-page {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.red {
+  color: #d20707 !important;
+}
+.green {
+  color: #05a731 !important;
+}
+.container-fluid {
+    height:100%;
+}
+.left_section,.right_section {
+  padding: 15px !important;
+}
+.left_section {
+  height:100%;
+  min-height:100%;
+  background:#ffffffe6;
+  border-right: 1px solid #eee;
+  overflow: hidden;
+}
+
+.login-box {
+  width:100%;
+  height:100%;
+  min-height:100%;
+  align-items: center;
+  margin-top: 100px;
+}
+.user-dp {
+  width:100px;
+  height:100px; 
+  display: block;
+  margin: 0 auto;
+}
+.login-box-msg {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.signin-page-form {
+  max-width:300px !important;
+  margin: 10px auto;
+}
+
+.input-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-control,.input-group-addon {
+  border-radius:0 !important;
+}
+input[type=checkbox], input[type=radio] {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+
+
+.right_section {
+  height: 100%;
+  position: relative;
+}
+@media only screen and (max-width: 765px) {
+  .right_section { display: none; }
+} 
+
+.about-info {
+  position: absolute;
+  width: 90%;
+  max-width: 450px;
+  padding: 10px 25px;
+  border: 1px solid #eee;
+  background: #ffffffe6;
+  margin: 0px auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: justify;
+  border-left: 4px solid #3686cc;
+}
+
+
+.header {
+  /*position: fixed;*/
+  background: #555;
+  padding: 15px;
+  padding-left: 15px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  display: none;
+  z-index: 1;
+}
+
+.header ul li {
+  list-style: none;
+  float: left;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  border-top:1px solid #eee;
+  background: #fff;
+  z-index: 0;
+}
+
+.login-page .footer { margin-left: -15px; }
+
+.data_section {
+  width: 100%;
+  height: 100%;
+  padding-left: 250px;
+  position: relative;
+  overflow: auto !important;
+  z-index: 0;
+}
+.content-box {
+  min-width: 300px;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow-x: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 22px;
+    font-family: segoe ui;   
+    padding: 0px 20px 10px 20px;
+}
+
+/* profile page css */
+.profile-data {
+  background: #fff;
+  padding-bottom: 15px;
+  border: 1px solid #e2e1e1;
+}
+
+.update-detail-form {
+  width:300px;
+  margin: 30px auto;
+}
+
+.profile-data input {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .header { display: block; }
+  .data_section { padding: 15px !important; }
+}
+
+.form-response {
+  /* add donor form */
+    color: #ffffff;
+    font-size: 16px;
+    font-family: segoe ui;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid;
+    margin-bottom: 11px;
+    background: #337ab7ed;
+}
+.form-response a {
+    color: #FFEB3B;
+}
+
+.login-form-response {
+    color: #fff !important;
+    background: #337ab7;
+    border: 2px solid #fff;
+    min-width: 200px;
+    max-width: 298px;
+    margin: 0 auto;
+    margin-top: 9px;
+}
+
+/*card css*/
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+    display: block !important;
+  }
+}
+
+.card {
+  max-width:220px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin:10px;
+  border:1px solid #ccc;
+  border-radius:3px;
+  display:inline-block;
+  vertical-align: middle !important;
+  background: #fff;
+}
+.card:nth-child(even) {
+  background: #eeeeee6b; 
+}
+.card-dp {
+  display:block;
+  width:100px;
+  height:100px;
+  margin:0 auto;
+  border-radius:50%;
+  margin-top:-40px;
+  border:1px solid #ccc;
+}
+
+.card-data {
+  padding: 14px 10px;
+  font-size:14px;
+  font-weight:300;
+  position:relative;
+  z-index:1;
+  width: 215px;
+  margin: 0 auto;
+}
+.card-data span {
+  margin-top:7px;
+}
+hr { margin:5px 0; }
+
+.icon {
+  margin-left:7px;
+  margin-right:7px;
+  padding: 5px;
+  color: #337ab7;
+}
+
+.attr {
+  text-align:center;
+  padding:5px 0;
+  border-radius:5px;
+  display:inline-block;
+  vertical-align:middle;
+  margin:2px;
+}
+
+.attr-bg {
+  background:#ccc;
+  max-width:100px;
+  text-align:center;
+  padding:5px 0;
+  border-radius:5px;
+  display:inline-block;
+  vertical-align:middle;
+  margin:2px;
+}
+
+/* icon discription */
+.icon-description {
+  background: #eee;
+  padding: 10px;
+  text-align: center;
+}
+.icon-description i {
+  border: 1px solid #ddd;
+  padding: 5px;
+  background: #ddd;
+  margin: 1px;
+  margin-top: 3px;
+}
+
+/* overview page css */
+.overview-details {   
+  max-width: 90%;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+}
+.overview-details tr:nth-of-type(even) {
+  background:#eee;
+}
+.overview-details td { 
+  padding:10px 12px; 
+  border-bottom:1px solid #ccc;
+}
+.overview-details td:nth-of-type(odd){
+  border-right:1px solid #ccc;
+}
+
+
+
+
+/*hide 000webhost logo*/
+a[target="_blank"] {
+    display: none !important;
+}
+
